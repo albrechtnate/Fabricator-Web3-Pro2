@@ -1,8 +1,41 @@
 colors:
   primary:
-    Dark: "rgb(30, 30, 30)"
-    Light: "rgb(242, 242, 242)"
+    Primary: "#4EA7CC"
+    Tint: "#2EBBC6"
+    Shade: "#405B73"
   secondary:
-    Red: "rgb(201, 55, 6)"
-    Yellow: "rgb(252, 207, 80)"
-    Blue: "rgb(39, 102, 143)"
+    Secondary: "#CEBECB"
+    Tint: "#E3D3DF"
+    Shade: "#C2AEB6"
+  tertiary:
+    Tertiary: "#DF9E62"
+    Tint: "#F5BD89"
+    Shade: "#C28D5B"
+  quaternary:
+    Quaternary: "#DA6648"
+    Tint: "#E6CFB8"
+    Shade: "#B84D3D"
+  success:
+    Success: "#21B49A"
+    Tint: "#6FC9AA"
+    Shade: "#408F84"
+  warning:
+    Warning: "#E8C055"
+    Tint: "#E7DDAF"
+    Shade: "#E4AD5A"
+  danger:
+    Danger: "#B83F3A"
+    Tint: "#EE5857"
+    Shade: "#653134"
+  neutral-darks:
+    Black: "#1C1929"
+    Dark 1: "#403B54"
+    Dark 2: "#7A7285"
+    Dark 3: "#A49AA6"
+    Dark 4: "#C4BCC4"
+  neutral-lights:
+    White: "#FCFAFC"
+    Light 1: "#F5F0F4"
+    Light 2: "#EBE2E1"
+    Light 3: "#E3D2C8"
+    Light 4: "#E6CFB8"
