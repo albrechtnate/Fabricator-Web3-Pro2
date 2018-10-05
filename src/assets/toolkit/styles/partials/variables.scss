@@ -1,0 +1,51 @@
+$colors: (
+	primary: (
+		primary: #4EA7CC,
+		tint: #2EBBC6,
+		shade: #405B73
+	),
+	secondary: (
+		primary: #CEBECB,
+		tint: #E3D3DF,
+		shade: #C2AEB6
+	),
+	tertiary: (
+		primary: #DF9E62,
+		tint: #F5BD89,
+		shade: #C28D5B
+	),
+	quaternary: (
+		primary: #DA6648,
+		tint: #E6CFB8,
+		shade: #B84D3D
+	),
+	success: (
+		primary: #21B49A,
+		tint: #6FC9AA,
+		shade: #408F84
+	),
+	warning: (
+		primary: #E8C055,
+		tint: #E7DDAF,
+		shade: #E4AD5A
+	),
+	danger: (
+		primary: #B83F3A,
+		tint: #EE5857,
+		shade: #653134
+	),
+	neutral-darks: (
+		black: #1C1929,
+		dark-one: #403B54,
+		dark-two: #7A7285,
+		dark-three: #A49AA6,
+		dark-four: #C4BCC4,
+	),
+	neutral-lights: (
+		white: #FCFAFC,
+		light-one: #F5F0F4,
+		light-two: #EBE2E1,
+		light-three: #E3D2C8,
+		light-four: #E6CFB8
+	)
+);

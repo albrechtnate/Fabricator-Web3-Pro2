@@ -66,16 +66,25 @@
 					<a href="components.html" class="f-menu__heading">Components</a>
 					<ul>
 						<li>
-							<a href="components.html#button">Button</a>
+							<a href="components.html#blockquote">Blockquote</a>
+						</li>
+						<li>
+							<a href="components.html#buttons">Buttons</a>
 						</li>
 						<li>
 							<a href="components.html#checkbox">Checkbox</a>
 						</li>
 						<li>
-							<a href="components.html#lists">Lists</a>
+							<a href="components.html#color">Color</a>
 						</li>
 						<li>
-							<a href="components.html#paragraph">Paragraph</a>
+							<a href="components.html#headings">Headings</a>
+						</li>
+						<li>
+							<a href="components.html#link">Link</a>
+						</li>
+						<li>
+							<a href="components.html#lists">Lists</a>
 						</li>
 						<li>
 							<a href="components.html#radio">Radio</a>
@@ -84,13 +93,13 @@
 							<a href="components.html#select">Select</a>
 						</li>
 						<li>
-							<a href="components.html#table">Table</a>
-						</li>
-						<li>
 							<a href="components.html#text-input">Text Input</a>
 						</li>
 						<li>
 							<a href="components.html#textarea">Textarea</a>
+						</li>
+						<li>
+							<a href="components.html#typography">Typography</a>
 						</li>
 					</ul>
 				</li>
@@ -140,33 +149,141 @@
 <h1 data-f-toggle="labels">Components</h1>
 
 
-<div class="f-item-group" id="button">
+<div class="f-item-group" id="blockquote">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Button</h2>
+		<h2 class="f-item-heading">Blockquote</h2>
 		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
+			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>button</code> component.</p>
-
-</div>
+	</div>
 <div class="f-item-preview">
-	<button class="button">Submit</button>
+	<blockquote>
+	<p>The function of prayer is not to influence God, but rather to change the nature of the one who prays.<p>
+</blockquote>
+<cite>Søren Kierkegaard</cite>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button&quot;&gt;Submit&lt;/button&gt;</code></pre>
+	<pre><code class="language-markup">&lt;blockquote&gt;
+	&lt;p&gt;The function of prayer is not to influence God, but rather to change the nature of the one who prays.&lt;p&gt;
+&lt;/blockquote&gt;
+&lt;cite&gt;Søren Kierkegaard&lt;/cite&gt;</code></pre>
 </div>
 
+
+</div>
+
+
+<div class="f-item-group" id="buttons">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Buttons</h2>
+	</div>
+		<div class="f-item-group" id="buttons.01-primary">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Primary</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="button button-primary">Primary Button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button button-primary&quot;&gt;Primary Button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.02-secondary">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Secondary</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="button button-secondary">Secondary Button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button button-secondary&quot;&gt;Secondary Button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.03-critical-action">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Critical Action</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="button button-critical">Critical Action Button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button button-critical&quot;&gt;Critical Action Button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.04-affirmative-action">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Affirmative Action</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="button button-affirmative">Affirmative Action Button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button button-affirmative&quot;&gt;Affirmative Action Button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.05-warning">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Warning</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="button button-warning">Warning Action Button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button button-warning&quot;&gt;Warning Action Button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
@@ -193,6 +310,366 @@
 	<pre><code class="language-markup">&lt;label&gt;
 	&lt;input type&#x3D;&quot;checkbox&quot; /&gt; Checkbox
 &lt;/label&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="color">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Color</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Primary</div>
+		<div class="f-color-chip__color">#4EA7CC</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#2EBBC6</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#405B73</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Secondary</div>
+		<div class="f-color-chip__color">#CEBECB</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#E3D3DF</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#C2AEB6</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tertiary</div>
+		<div class="f-color-chip__color">#DF9E62</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#F5BD89</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#C28D5B</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Quaternary</div>
+		<div class="f-color-chip__color">#DA6648</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#E6CFB8</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#B84D3D</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Success</div>
+		<div class="f-color-chip__color">#21B49A</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#6FC9AA</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#408F84</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Warning</div>
+		<div class="f-color-chip__color">#E8C055</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#E7DDAF</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#E4AD5A</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Danger</div>
+		<div class="f-color-chip__color">#B83F3A</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#EE5857</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#653134</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Black</div>
+		<div class="f-color-chip__color">#1C1929</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Dark 1</div>
+		<div class="f-color-chip__color">#403B54</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Dark 2</div>
+		<div class="f-color-chip__color">#7A7285</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Dark 3</div>
+		<div class="f-color-chip__color">#A49AA6</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Dark 4</div>
+		<div class="f-color-chip__color">#C4BCC4</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">White</div>
+		<div class="f-color-chip__color">#FCFAFC</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Light 1</div>
+		<div class="f-color-chip__color">#F5F0F4</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Light 2</div>
+		<div class="f-color-chip__color">#EBE2E1</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Light 3</div>
+		<div class="f-color-chip__color">#E3D2C8</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Light 4</div>
+		<div class="f-color-chip__color">#E6CFB8</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Primary&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#4EA7CC&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#2EBBC6&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#405B73&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Secondary&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#CEBECB&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E3D3DF&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#C2AEB6&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tertiary&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#DF9E62&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#F5BD89&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#C28D5B&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Quaternary&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#DA6648&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E6CFB8&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#B84D3D&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Success&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#21B49A&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#6FC9AA&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#408F84&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Warning&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E8C055&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E7DDAF&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E4AD5A&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Danger&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#B83F3A&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#EE5857&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#653134&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Black&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#1C1929&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Dark 1&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#403B54&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Dark 2&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#7A7285&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Dark 3&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#A49AA6&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Dark 4&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#C4BCC4&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;White&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#FCFAFC&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Light 1&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#F5F0F4&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Light 2&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#EBE2E1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Light 3&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E3D2C8&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Light 4&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E6CFB8&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="headings">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Headings</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<h1>Heading Level 1</h1>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;h1&gt;Heading Level 1&lt;/h1&gt;
+&lt;h2&gt;Heading Level 2&lt;/h2&gt;
+&lt;h3&gt;Heading Level 3&lt;/h3&gt;
+&lt;h4&gt;Heading Level 4&lt;/h4&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="link">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Link</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<a href="#">Continue</a>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;a href&#x3D;&quot;#&quot;&gt;Continue&lt;/a&gt;</code></pre>
 </div>
 
 
@@ -260,30 +737,6 @@
 </div>
 
 		</div>
-
-</div>
-
-
-<div class="f-item-group" id="paragraph">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Paragraph</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div>
-<div class="f-item-preview">
-	<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</code></pre>
-</div>
-
 
 </div>
 
@@ -368,104 +821,6 @@
 </div>
 
 
-<div class="f-item-group" id="table">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Table</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div>
-<div class="f-item-preview">
-	<table>
-	<thead>
-		<tr>
-			<th>Table Heading 1</th>
-			<th>Table Heading 2</th>
-			<th>Table Heading 3</th>
-		</tr>
-	</thead>
-	<tfoot>
-		<tr>
-			<th>Table Footer 1</th>
-			<th>Table Footer 2</th>
-			<th>Table Footer 3</th>
-		</tr>
-	</tfoot>
-	<tbody>
-		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
-		</tr>
-		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
-		</tr>
-		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
-		</tr>
-		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
-		</tr>
-	</tbody>
-</table>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;table&gt;
-	&lt;thead&gt;
-		&lt;tr&gt;
-			&lt;th&gt;Table Heading 1&lt;/th&gt;
-			&lt;th&gt;Table Heading 2&lt;/th&gt;
-			&lt;th&gt;Table Heading 3&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tfoot&gt;
-		&lt;tr&gt;
-			&lt;th&gt;Table Footer 1&lt;/th&gt;
-			&lt;th&gt;Table Footer 2&lt;/th&gt;
-			&lt;th&gt;Table Footer 3&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/tfoot&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-</div>
-
-
-</div>
-
-
 <div class="f-item-group" id="text-input">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -512,6 +867,116 @@
 	<pre><code class="language-markup">&lt;textarea name&#x3D;&quot;&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;10&quot;&gt;&lt;/textarea&gt;</code></pre>
 </div>
 
+
+</div>
+
+
+<div class="f-item-group" id="typography">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Typography</h2>
+	</div>
+		<div class="f-item-group" id="typography.label">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Label</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Paragraph with a <code>.label</code> class applied. Intended for input labels and other microcopy.</p>
+
+</div>
+<div class="f-item-preview">
+	<p class="label">Label</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p class&#x3D;&quot;label&quot;&gt;Label&lt;/p&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="typography.lead-paragraph">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Lead Paragraph</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Paragraph with a <code>.lead</code> class applied. Intended for the initial paragraph of a page or article (the summarizing paragraph… the “bite”).</p>
+
+</div>
+<div class="f-item-preview">
+	<p class="lead">Our tone changes depending on the situation, but it’s generally informal. We have a <em>sense of humor</em>, but we value clarity over entertainment.</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p class&#x3D;&quot;lead&quot;&gt;Our tone changes depending on the situation, but it’s generally informal. We have a &lt;em&gt;sense of humor&lt;/em&gt;, but we value clarity over entertainment.&lt;/p&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="typography.paragraph">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Paragraph</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<p>My generation is special because of what we missed rather than what we got, because in a certain sense <strong>we are the first and the last.</strong> The first to take technology for granted. <em>(What was a space shot to us, except an hour cut from Social Studies to gather before a TV in the gym as Cape Canaveral counted down?)</em> The first to grow up with TV. My sister was 8 when we got our set, so to her it seemed magic and always somewhat foreign. She had known books already and would never really replace them. But for me, the TV set was, like the kitchen sink and the telephone, a fact of life.</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p&gt;My generation is special because of what we missed rather than what we got, because in a certain sense &lt;strong&gt;we are the first and the last.&lt;/strong&gt; The first to take technology for granted. &lt;em&gt;(What was a space shot to us, except an hour cut from Social Studies to gather before a TV in the gym as Cape Canaveral counted down?)&lt;/em&gt; The first to grow up with TV. My sister was 8 when we got our set, so to her it seemed magic and always somewhat foreign. She had known books already and would never really replace them. But for me, the TV set was, like the kitchen sink and the telephone, a fact of life.&lt;/p&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="typography.secondary-paragraph">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Secondary Paragraph</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Paragraph with a <code>.secondary</code> class applied. Intended for footnotes, asides, and other auxillary content.</p>
+
+</div>
+<div class="f-item-preview">
+	<p class="secondary">Our tone changes depending on the situation, but it’s generally informal. We have a sense of humor, but we value clarity over entertainment.</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p class&#x3D;&quot;secondary&quot;&gt;Our tone changes depending on the situation, but it’s generally informal. We have a sense of humor, but we value clarity over entertainment.&lt;/p&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
