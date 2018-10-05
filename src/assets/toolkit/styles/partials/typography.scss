@@ -64,3 +64,46 @@ p.label, span.secondary {
 
 	color: map-get(map-get($colors, success), primary);
 }
+
+blockquote {
+	display: inline-block;
+	margin: 0;
+
+	.wrapper {
+		font-style: italic;
+		font-weight: bold;
+
+		color: map-get(map-get($colors, neutral-darks), dark-three);
+		background-color: map-get(map-get($colors, neutral-lights), light-one);
+
+		position: relative;
+		padding: 11px 20px 15px 70px;
+
+		&::before {
+			content: '“';
+			display: block;
+			position: absolute;
+			top: 50px;
+			left: 16px;
+
+			font-style: italic;
+			font-weight: bold;
+			font-size: 69px;
+
+			color: map-get(map-get($colors, secondary), tint);
+		}
+	}
+
+	cite {
+		display: block;
+		@extend p.label;
+		font-style: normal;
+		text-align: right;
+		line-height: 11px;
+		margin-top: 7px;
+
+		&::before {
+			content: "—";
+		}
+	}
+}
