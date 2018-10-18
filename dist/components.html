@@ -93,10 +93,13 @@
 							<a href="components.html#radio">Radio</a>
 						</li>
 						<li>
+							<a href="components.html#search-input">Search Input</a>
+						</li>
+						<li>
 							<a href="components.html#select">Select</a>
 						</li>
 						<li>
-							<a href="components.html#text-input">Text Input</a>
+							<a href="components.html#text-inputs">Text Inputs</a>
 						</li>
 						<li>
 							<a href="components.html#textarea">Textarea</a>
@@ -306,14 +309,38 @@
 		</div>
 	</div>
 <div class="f-item-preview">
+	<fieldset class="checkbox_buttons">
+	<legend>Checkbox Button Label</legend>
+
 	<label>
-	<input type="checkbox" /> Checkbox
-</label>
+		<input type="checkbox" name="groupName" id="checkbox1" value="checkbox1">Checkbox 1
+	</label>
+
+	<label>
+		<input type="checkbox" name="groupName" id="checkbox2" value="checkbox2">Checkbox 2
+	</label>
+
+	<label>
+		<input type="checkbox" name="groupName" id="checkbox3" value="checkbox3">Checkbox 3
+	</label>
+</fieldset>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type&#x3D;&quot;checkbox&quot; /&gt; Checkbox
-&lt;/label&gt;</code></pre>
+	<pre><code class="language-markup">&lt;fieldset class&#x3D;&quot;checkbox_buttons&quot;&gt;
+	&lt;legend&gt;Checkbox Button Label&lt;/legend&gt;
+
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;checkbox1&quot; value&#x3D;&quot;checkbox1&quot;&gt;Checkbox 1
+	&lt;/label&gt;
+
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;checkbox2&quot; value&#x3D;&quot;checkbox2&quot;&gt;Checkbox 2
+	&lt;/label&gt;
+
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;checkbox3&quot; value&#x3D;&quot;checkbox3&quot;&gt;Checkbox 3
+	&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
 </div>
 
 
@@ -876,30 +903,70 @@
 		</div>
 	</div>
 <div class="f-item-preview">
+	<fieldset class="radio_buttons">
+	<legend>Radio Button Label</legend>
+
 	<label>
-	<input type="radio" name="groupName" id="radio1" /> Radio 1
-</label>
+		<input type="radio" name="groupName" id="radio1" value="radio1">Radio 1
+	</label>
 
-<label>
-	<input type="radio" name="groupName" id="radio2" /> Radio 2
-</label>
+	<label>
+		<input type="radio" name="groupName" id="radio2" value="radio2">Radio 2
+	</label>
 
-<label>
-	<input type="radio" name="groupName" id="radio3" /> Radio 3
-</label>
+	<label>
+		<input type="radio" name="groupName" id="radio3" value="radio3">Radio 3
+	</label>
+</fieldset>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio1&quot; /&gt; Radio 1
-&lt;/label&gt;
+	<pre><code class="language-markup">&lt;fieldset class&#x3D;&quot;radio_buttons&quot;&gt;
+	&lt;legend&gt;Radio Button Label&lt;/legend&gt;
 
-&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio2&quot; /&gt; Radio 2
-&lt;/label&gt;
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio1&quot; value&#x3D;&quot;radio1&quot;&gt;Radio 1
+	&lt;/label&gt;
 
-&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio3&quot; /&gt; Radio 3
-&lt;/label&gt;</code></pre>
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio2&quot; value&#x3D;&quot;radio2&quot;&gt;Radio 2
+	&lt;/label&gt;
+
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio3&quot; value&#x3D;&quot;radio3&quot;&gt;Radio 3
+	&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="search-input">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Search Input</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="inputWrapper search">
+	<label for="searchInput">Text Input</label>
+	<input type="search" id="searchInput">
+	<button type="submit" class="searchButton">Search</button>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper search&quot;&gt;
+	&lt;label for&#x3D;&quot;searchInput&quot;&gt;Text Input&lt;/label&gt;
+	&lt;input type&#x3D;&quot;search&quot; id&#x3D;&quot;searchInput&quot;&gt;
+	&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;searchButton&quot;&gt;Search&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 
@@ -920,74 +987,152 @@
 		</div>
 	</div>
 <div class="f-item-preview">
+	<div class="inputWrapper select">
+	<label for="textInput">Select Label</label>
 	<select name="" id="">
-	<option value="">Option 1</option>
-	<option value="">Option 2</option>
-	<option value="">Option 3</option>
-	<option value="">Option 4</option>
-	<option value="">Option 5</option>
-</select>
+		<option value="">Option 1</option>
+		<option value="">Option 2</option>
+		<option value="">Option 3</option>
+		<option value="">Option 4</option>
+		<option value="">Option 5</option>
+	</select>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;select name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
-&lt;/select&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper select&quot;&gt;
+	&lt;label for&#x3D;&quot;textInput&quot;&gt;Select Label&lt;/label&gt;
+	&lt;select name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
+		&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
+		&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+		&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+		&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+		&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 
 </div>
 
 
-<div class="f-item-group" id="text-input">
+<div class="f-item-group" id="text-inputs">
 
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Text Input</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Text Inputs</h2>
 	</div>
+		<div class="f-item-group" id="text-inputs.default">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Default</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
 <div class="f-item-preview">
-	<label for="textInput">Text input</label>
-<input type="text" id="textInput" />
+	<div class="inputWrapper text">
+	<label for="textInput">Text Input</label>
+	<input type="text" id="textInput">
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label for&#x3D;&quot;textInput&quot;&gt;Text input&lt;/label&gt;
-&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot; /&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper text&quot;&gt;
+	&lt;label for&#x3D;&quot;textInput&quot;&gt;Text Input&lt;/label&gt;
+	&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot;&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
+		</div>
+		<div class="f-item-group" id="text-inputs.required-text-input">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Required Text Input</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="inputWrapper text">
+	<label for="textInput" class="requiredInput">Required Text Input</label>
+	<input type="text" id="textInput">
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper text&quot;&gt;
+	&lt;label for&#x3D;&quot;textInput&quot; class&#x3D;&quot;requiredInput&quot;&gt;Required Text Input&lt;/label&gt;
+	&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot;&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
 
 <div class="f-item-group" id="textarea">
 
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Textarea</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Textarea</h2>
 	</div>
+		<div class="f-item-group" id="textarea.default-2">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Default 2</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
 <div class="f-item-preview">
-	<textarea name="" id="" cols="30" rows="10"></textarea>
+	<div class="inputWrapper textarea">
+	<label for="textArea">Text Area</label>
+	<textarea name="textArea" id="textArea"></textarea>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;textarea name&#x3D;&quot;&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;10&quot;&gt;&lt;/textarea&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper textarea&quot;&gt;
+	&lt;label for&#x3D;&quot;textArea&quot;&gt;Text Area&lt;/label&gt;
+	&lt;textarea name&#x3D;&quot;textArea&quot; id&#x3D;&quot;textArea&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
+		</div>
+		<div class="f-item-group" id="textarea.required">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Required</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="inputWrapper textarea">
+	<label for="textArea" class="requiredInput">Text Area</label>
+	<textarea name="textArea" id="textArea"></textarea>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper textarea&quot;&gt;
+	&lt;label for&#x3D;&quot;textArea&quot; class&#x3D;&quot;requiredInput&quot;&gt;Text Area&lt;/label&gt;
+	&lt;textarea name&#x3D;&quot;textArea&quot; id&#x3D;&quot;textArea&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
