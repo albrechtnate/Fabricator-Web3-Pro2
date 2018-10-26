@@ -1,0 +1,88 @@
+.button {
+	position: relative;
+	border: none;
+	border-bottom: 2px solid transparent;
+
+	font-family: 'Caecilia LT Pro', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+
+	padding: 0;
+	margin-right: 20px;
+	margin-bottom: 22px;
+
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+
+		width: calc(100% + 6px);
+		height: 12px;
+
+		left: -3px;
+		bottom: 0;
+
+		opacity: 0.2;
+	}
+
+	&:hover, &:focus {
+		cursor: pointer;
+		outline: none;
+
+		border-bottom: 2px solid;
+
+		&::before {
+			content: "";
+			display: block;
+			height: 0;
+			width: 0;
+			position: absolute;
+			bottom: -5px;
+			right: -7px;
+			border-top: 4px solid transparent;
+			border-bottom: 4px solid transparent;
+			border-left: 7px solid;
+		}
+	}
+}
+
+.button-primary {
+	color: map-get(map-get($colors, quaternary), primary);
+
+	&::after {
+		background-color: map-get(map-get($colors, tertiary), primary);
+	}
+}
+
+.button-secondary {
+	color: map-get(map-get($colors, primary), primary);
+
+	&::after {
+		background-color: map-get(map-get($colors, primary), primary);
+	}
+}
+
+.button-critical {
+	color: map-get(map-get($colors, danger), primary);
+
+	&::after {
+		background-color: map-get(map-get($colors, danger), tint);
+	}
+}
+
+.button-affirmative {
+	color: map-get(map-get($colors, success), primary);
+
+	&::after {
+		background-color: map-get(map-get($colors, success), tint);
+	}
+}
+
+.button-warning {
+	color: map-get(map-get($colors, warning), shade);
+
+	&::after {
+		background-color: map-get(map-get($colors, warning), primary);
+	}
+}

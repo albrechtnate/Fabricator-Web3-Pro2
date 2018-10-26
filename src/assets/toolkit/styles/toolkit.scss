@@ -2,7 +2,9 @@
  * Toolkit styles
  */
 
-
-body {
-	font-family: sans-serif;
-}
+@import 'partials/variables';
+@import 'partials/grids';
+@import 'partials/typography';
+@import 'partials/links';
+@import 'partials/buttons';
+@import 'partials/form_inputs';

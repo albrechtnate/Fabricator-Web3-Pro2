@@ -66,31 +66,46 @@
 					<a href="components.html" class="f-menu__heading">Components</a>
 					<ul>
 						<li>
-							<a href="components.html#button">Button</a>
+							<a href="components.html#blockquote">Blockquote</a>
+						</li>
+						<li>
+							<a href="components.html#buttons">Buttons</a>
 						</li>
 						<li>
 							<a href="components.html#checkbox">Checkbox</a>
 						</li>
 						<li>
-							<a href="components.html#lists">Lists</a>
+							<a href="components.html#color">Color</a>
 						</li>
 						<li>
-							<a href="components.html#paragraph">Paragraph</a>
+							<a href="components.html#grid-system">Grid System</a>
+						</li>
+						<li>
+							<a href="components.html#headings">Headings</a>
+						</li>
+						<li>
+							<a href="components.html#link">Link</a>
+						</li>
+						<li>
+							<a href="components.html#lists">Lists</a>
 						</li>
 						<li>
 							<a href="components.html#radio">Radio</a>
 						</li>
 						<li>
+							<a href="components.html#search-input">Search Input</a>
+						</li>
+						<li>
 							<a href="components.html#select">Select</a>
 						</li>
 						<li>
-							<a href="components.html#table">Table</a>
-						</li>
-						<li>
-							<a href="components.html#text-input">Text Input</a>
+							<a href="components.html#text-inputs">Text Inputs</a>
 						</li>
 						<li>
 							<a href="components.html#textarea">Textarea</a>
+						</li>
+						<li>
+							<a href="components.html#typography">Typography</a>
 						</li>
 					</ul>
 				</li>
@@ -115,9 +130,6 @@
 				<li>
 					<a href="docs.html" class="f-menu__heading">Docs</a>
 					<ul>
-						<li>
-							<a href="docs.html#javascript">Javascript</a>
-						</li>
 					</ul>
 				</li>
 		
@@ -140,33 +152,145 @@
 <h1 data-f-toggle="labels">Components</h1>
 
 
-<div class="f-item-group" id="button">
+<div class="f-item-group" id="blockquote">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Button</h2>
+		<h2 class="f-item-heading">Blockquote</h2>
 		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
+			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>button</code> component.</p>
-
-</div>
+	</div>
 <div class="f-item-preview">
-	<button class="button">Submit</button>
+	<blockquote>
+	<div class="wrapper">
+		<p>&ldquo;The function of prayer is not to influence God, but rather to change the nature of the one who prays.&rdquo;<p>
+	</div>
+	<cite>Søren Kierkegaard</cite>
+</blockquote>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button&quot;&gt;Submit&lt;/button&gt;</code></pre>
+	<pre><code class="language-markup">&lt;blockquote&gt;
+	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+		&lt;p&gt;&amp;ldquo;The function of prayer is not to influence God, but rather to change the nature of the one who prays.&amp;rdquo;&lt;p&gt;
+	&lt;/div&gt;
+	&lt;cite&gt;Søren Kierkegaard&lt;/cite&gt;
+&lt;/blockquote&gt;</code></pre>
 </div>
 
+
+</div>
+
+
+<div class="f-item-group" id="buttons">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Buttons</h2>
+	</div>
+		<div class="f-item-group" id="buttons.01-primary">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Primary</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="button button-primary">Primary Button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button button-primary&quot;&gt;Primary Button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.02-secondary">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Secondary</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="button button-secondary">Secondary Button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button button-secondary&quot;&gt;Secondary Button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.03-critical-action">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Critical Action</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="button button-critical">Critical Action Button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button button-critical&quot;&gt;Critical Action Button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.04-affirmative-action">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Affirmative Action</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="button button-affirmative">Affirmative Action Button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button button-affirmative&quot;&gt;Affirmative Action Button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.05-warning">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Warning</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="button button-warning">Warning Action Button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button button-warning&quot;&gt;Warning Action Button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
@@ -185,14 +309,515 @@
 		</div>
 	</div>
 <div class="f-item-preview">
+	<fieldset class="checkbox_buttons">
+	<legend>Checkbox Button Label</legend>
+
 	<label>
-	<input type="checkbox" /> Checkbox
-</label>
+		<input type="checkbox" name="groupName" id="checkbox1" value="checkbox1">Checkbox 1
+	</label>
+
+	<label>
+		<input type="checkbox" name="groupName" id="checkbox2" value="checkbox2">Checkbox 2
+	</label>
+
+	<label>
+		<input type="checkbox" name="groupName" id="checkbox3" value="checkbox3">Checkbox 3
+	</label>
+</fieldset>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type&#x3D;&quot;checkbox&quot; /&gt; Checkbox
-&lt;/label&gt;</code></pre>
+	<pre><code class="language-markup">&lt;fieldset class&#x3D;&quot;checkbox_buttons&quot;&gt;
+	&lt;legend&gt;Checkbox Button Label&lt;/legend&gt;
+
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;checkbox1&quot; value&#x3D;&quot;checkbox1&quot;&gt;Checkbox 1
+	&lt;/label&gt;
+
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;checkbox2&quot; value&#x3D;&quot;checkbox2&quot;&gt;Checkbox 2
+	&lt;/label&gt;
+
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;checkbox3&quot; value&#x3D;&quot;checkbox3&quot;&gt;Checkbox 3
+	&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="color">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Color</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Primary</div>
+		<div class="f-color-chip__color">#4EA7CC</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#2EBBC6</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#405B73</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Secondary</div>
+		<div class="f-color-chip__color">#CEBECB</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#E3D3DF</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#C2AEB6</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tertiary</div>
+		<div class="f-color-chip__color">#DF9E62</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#F5BD89</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#C28D5B</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Quaternary</div>
+		<div class="f-color-chip__color">#DA6648</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#E6CFB8</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#B84D3D</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Success</div>
+		<div class="f-color-chip__color">#21B49A</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#6FC9AA</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#408F84</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Warning</div>
+		<div class="f-color-chip__color">#E8C055</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#E7DDAF</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#E4AD5A</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Danger</div>
+		<div class="f-color-chip__color">#B83F3A</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Tint</div>
+		<div class="f-color-chip__color">#EE5857</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Shade</div>
+		<div class="f-color-chip__color">#653134</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Black</div>
+		<div class="f-color-chip__color">#1C1929</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Dark 1</div>
+		<div class="f-color-chip__color">#403B54</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Dark 2</div>
+		<div class="f-color-chip__color">#7A7285</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Dark 3</div>
+		<div class="f-color-chip__color">#A49AA6</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Dark 4</div>
+		<div class="f-color-chip__color">#C4BCC4</div>
+	</div>
+</div>
+<div class="f-color-chips">
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">White</div>
+		<div class="f-color-chip__color">#FCFAFC</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Light 1</div>
+		<div class="f-color-chip__color">#F5F0F4</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Light 2</div>
+		<div class="f-color-chip__color">#EBE2E1</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Light 3</div>
+		<div class="f-color-chip__color">#E3D2C8</div>
+	</div>
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">Light 4</div>
+		<div class="f-color-chip__color">#E6CFB8</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Primary&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#4EA7CC&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#2EBBC6&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#405B73&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Secondary&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#CEBECB&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E3D3DF&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#C2AEB6&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tertiary&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#DF9E62&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#F5BD89&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#C28D5B&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Quaternary&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#DA6648&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E6CFB8&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#B84D3D&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Success&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#21B49A&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#6FC9AA&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#408F84&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Warning&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E8C055&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E7DDAF&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E4AD5A&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Danger&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#B83F3A&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Tint&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#EE5857&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Shade&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#653134&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Black&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#1C1929&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Dark 1&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#403B54&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Dark 2&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#7A7285&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Dark 3&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#A49AA6&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Dark 4&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#C4BCC4&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;White&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#FCFAFC&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Light 1&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#F5F0F4&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Light 2&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#EBE2E1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Light 3&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E3D2C8&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;Light 4&lt;/div&gt;
+		&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#E6CFB8&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="grid-system">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Grid System</h2>
+	</div>
+		<div class="f-item-group" id="grid-system.baseline-grid">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Baseline Grid</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Using a baseline helps create a cohesive vertical rythmn and takes the guess work out of the placement of elements. The optimal line-height at standard line-lengths of body text is 22px. The baseline, 11px, is half of this for extra flexibility, but remains related to the text. Major elements should align on this baseline, and preferably on the macro baseline (22px).</p>
+
+</div>
+<div class="f-item-preview">
+	<h4>Mirco Baseline (11px)</h4>
+<div class="baseline-micro">
+	<p>Dear God, I cannot love Thee the way I want to. You are the slim crescent of a moon that I see and my self is the earth’s shadow that keeps me from seeing all the moon. The crescent is very beautiful and perhaps that is all one like I am should or could see; but what I am afraid of, dear God, is that my self shadow will grow so large that it blocks the whole moon, and that I will judge myself by the shadow that is nothing.</p>
+	<p>I do not know you God because I am in the way. Please help me to push myself aside.</p>
+	<p>I want very much to succeed in the world with what I want to do. I have prayed to You about this with my mind and my nerves on it and strung my nerves into a tension over it and said, “oh God, please,” and “I must,” and “please, please.” I have not asked You, I feel, in the right way. Let me henceforth ask You with resignation—that not being or meant to be a slacking up in prayer but a less frenzied kind, realizing that the frenzy is caused by an eagerness for what I want and not a spiritual trust. I do not wish to presume. I want to love.</p>
+</div>
+<h4>Macro Baseline (22px)</h4>
+<div class="baseline-macro">
+	<p>Dear God, I cannot love Thee the way I want to. You are the slim crescent of a moon that I see and my self is the earth’s shadow that keeps me from seeing all the moon. The crescent is very beautiful and perhaps that is all one like I am should or could see; but what I am afraid of, dear God, is that my self shadow will grow so large that it blocks the whole moon, and that I will judge myself by the shadow that is nothing.</p>
+	<p>I do not know you God because I am in the way. Please help me to push myself aside.</p>
+	<p>I want very much to succeed in the world with what I want to do. I have prayed to You about this with my mind and my nerves on it and strung my nerves into a tension over it and said, “oh God, please,” and “I must,” and “please, please.” I have not asked You, I feel, in the right way. Let me henceforth ask You with resignation—that not being or meant to be a slacking up in prayer but a less frenzied kind, realizing that the frenzy is caused by an eagerness for what I want and not a spiritual trust. I do not wish to presume. I want to love.</p>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;h4&gt;Mirco Baseline (11px)&lt;/h4&gt;
+&lt;div class&#x3D;&quot;baseline-micro&quot;&gt;
+	&lt;p&gt;Dear God, I cannot love Thee the way I want to. You are the slim crescent of a moon that I see and my self is the earth’s shadow that keeps me from seeing all the moon. The crescent is very beautiful and perhaps that is all one like I am should or could see; but what I am afraid of, dear God, is that my self shadow will grow so large that it blocks the whole moon, and that I will judge myself by the shadow that is nothing.&lt;/p&gt;
+	&lt;p&gt;I do not know you God because I am in the way. Please help me to push myself aside.&lt;/p&gt;
+	&lt;p&gt;I want very much to succeed in the world with what I want to do. I have prayed to You about this with my mind and my nerves on it and strung my nerves into a tension over it and said, “oh God, please,” and “I must,” and “please, please.” I have not asked You, I feel, in the right way. Let me henceforth ask You with resignation—that not being or meant to be a slacking up in prayer but a less frenzied kind, realizing that the frenzy is caused by an eagerness for what I want and not a spiritual trust. I do not wish to presume. I want to love.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h4&gt;Macro Baseline (22px)&lt;/h4&gt;
+&lt;div class&#x3D;&quot;baseline-macro&quot;&gt;
+	&lt;p&gt;Dear God, I cannot love Thee the way I want to. You are the slim crescent of a moon that I see and my self is the earth’s shadow that keeps me from seeing all the moon. The crescent is very beautiful and perhaps that is all one like I am should or could see; but what I am afraid of, dear God, is that my self shadow will grow so large that it blocks the whole moon, and that I will judge myself by the shadow that is nothing.&lt;/p&gt;
+	&lt;p&gt;I do not know you God because I am in the way. Please help me to push myself aside.&lt;/p&gt;
+	&lt;p&gt;I want very much to succeed in the world with what I want to do. I have prayed to You about this with my mind and my nerves on it and strung my nerves into a tension over it and said, “oh God, please,” and “I must,” and “please, please.” I have not asked You, I feel, in the right way. Let me henceforth ask You with resignation—that not being or meant to be a slacking up in prayer but a less frenzied kind, realizing that the frenzy is caused by an eagerness for what I want and not a spiritual trust. I do not wish to presume. I want to love.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="grid-system.column-grid">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Column Grid</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>The column grid is designed to be incredibly flexible to allow for countless permutations of layouts while still retaining some sense of order. Since each grid unit (a 21px wide and 44px high box) is already so small, there is no traditional gutter. Implement the grid judiciously and don’t abuse its flexibility.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="column-grid">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<nav>Sidebar Navigation Area</nav>
+	<main>Main Content Area</main>
+	<aside>Aside Area</aside>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;column-grid&quot;&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;nav&gt;Sidebar Navigation Area&lt;/nav&gt;
+	&lt;main&gt;Main Content Area&lt;/main&gt;
+	&lt;aside&gt;Aside Area&lt;/aside&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="headings">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Headings</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<h1>Heading Level 1</h1>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;h1&gt;Heading Level 1&lt;/h1&gt;
+&lt;h2&gt;Heading Level 2&lt;/h2&gt;
+&lt;h3&gt;Heading Level 3&lt;/h3&gt;
+&lt;h4&gt;Heading Level 4&lt;/h4&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="link">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Link</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<a href="#">Continue</a>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;a href&#x3D;&quot;#&quot;&gt;Continue&lt;/a&gt;</code></pre>
 </div>
 
 
@@ -264,30 +889,6 @@
 </div>
 
 
-<div class="f-item-group" id="paragraph">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Paragraph</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div>
-<div class="f-item-preview">
-	<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</code></pre>
-</div>
-
-
-</div>
-
-
 <div class="f-item-group" id="radio">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -302,30 +903,70 @@
 		</div>
 	</div>
 <div class="f-item-preview">
+	<fieldset class="radio_buttons">
+	<legend>Radio Button Label</legend>
+
 	<label>
-	<input type="radio" name="groupName" id="radio1" /> Radio 1
-</label>
+		<input type="radio" name="groupName" id="radio1" value="radio1">Radio 1
+	</label>
 
-<label>
-	<input type="radio" name="groupName" id="radio2" /> Radio 2
-</label>
+	<label>
+		<input type="radio" name="groupName" id="radio2" value="radio2">Radio 2
+	</label>
 
-<label>
-	<input type="radio" name="groupName" id="radio3" /> Radio 3
-</label>
+	<label>
+		<input type="radio" name="groupName" id="radio3" value="radio3">Radio 3
+	</label>
+</fieldset>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio1&quot; /&gt; Radio 1
-&lt;/label&gt;
+	<pre><code class="language-markup">&lt;fieldset class&#x3D;&quot;radio_buttons&quot;&gt;
+	&lt;legend&gt;Radio Button Label&lt;/legend&gt;
 
-&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio2&quot; /&gt; Radio 2
-&lt;/label&gt;
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio1&quot; value&#x3D;&quot;radio1&quot;&gt;Radio 1
+	&lt;/label&gt;
 
-&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio3&quot; /&gt; Radio 3
-&lt;/label&gt;</code></pre>
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio2&quot; value&#x3D;&quot;radio2&quot;&gt;Radio 2
+	&lt;/label&gt;
+
+	&lt;label&gt;
+		&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio3&quot; value&#x3D;&quot;radio3&quot;&gt;Radio 3
+	&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="search-input">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Search Input</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="inputWrapper search">
+	<label for="searchInput">Text Input</label>
+	<input type="search" id="searchInput">
+	<button type="submit" class="searchButton">Search</button>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper search&quot;&gt;
+	&lt;label for&#x3D;&quot;searchInput&quot;&gt;Text Input&lt;/label&gt;
+	&lt;input type&#x3D;&quot;search&quot; id&#x3D;&quot;searchInput&quot;&gt;
+	&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;searchButton&quot;&gt;Search&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 
@@ -346,172 +987,262 @@
 		</div>
 	</div>
 <div class="f-item-preview">
+	<div class="inputWrapper select">
+	<label for="textInput">Select Label</label>
 	<select name="" id="">
-	<option value="">Option 1</option>
-	<option value="">Option 2</option>
-	<option value="">Option 3</option>
-	<option value="">Option 4</option>
-	<option value="">Option 5</option>
-</select>
+		<option value="">Option 1</option>
+		<option value="">Option 2</option>
+		<option value="">Option 3</option>
+		<option value="">Option 4</option>
+		<option value="">Option 5</option>
+	</select>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;select name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
-&lt;/select&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper select&quot;&gt;
+	&lt;label for&#x3D;&quot;textInput&quot;&gt;Select Label&lt;/label&gt;
+	&lt;select name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
+		&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
+		&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+		&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+		&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+		&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 
 </div>
 
 
-<div class="f-item-group" id="table">
+<div class="f-item-group" id="text-inputs">
 
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Table</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Text Inputs</h2>
 	</div>
+		<div class="f-item-group" id="text-inputs.default">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Default</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
 <div class="f-item-preview">
-	<table>
-	<thead>
-		<tr>
-			<th>Table Heading 1</th>
-			<th>Table Heading 2</th>
-			<th>Table Heading 3</th>
-		</tr>
-	</thead>
-	<tfoot>
-		<tr>
-			<th>Table Footer 1</th>
-			<th>Table Footer 2</th>
-			<th>Table Footer 3</th>
-		</tr>
-	</tfoot>
-	<tbody>
-		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
-		</tr>
-		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
-		</tr>
-		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
-		</tr>
-		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
-		</tr>
-	</tbody>
-</table>
+	<div class="inputWrapper text">
+	<label for="textInput">Text Input</label>
+	<input type="text" id="textInput">
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;table&gt;
-	&lt;thead&gt;
-		&lt;tr&gt;
-			&lt;th&gt;Table Heading 1&lt;/th&gt;
-			&lt;th&gt;Table Heading 2&lt;/th&gt;
-			&lt;th&gt;Table Heading 3&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tfoot&gt;
-		&lt;tr&gt;
-			&lt;th&gt;Table Footer 1&lt;/th&gt;
-			&lt;th&gt;Table Footer 2&lt;/th&gt;
-			&lt;th&gt;Table Footer 3&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/tfoot&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper text&quot;&gt;
+	&lt;label for&#x3D;&quot;textInput&quot;&gt;Text Input&lt;/label&gt;
+	&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot;&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
-
-</div>
-
-
-<div class="f-item-group" id="text-input">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Text Input</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
 		</div>
-	</div>
+		<div class="f-item-group" id="text-inputs.required-text-input">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Required Text Input</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
 <div class="f-item-preview">
-	<label for="textInput">Text input</label>
-<input type="text" id="textInput" />
+	<div class="inputWrapper text">
+	<label for="textInput" class="requiredInput">Required Text Input</label>
+	<input type="text" id="textInput">
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label for&#x3D;&quot;textInput&quot;&gt;Text input&lt;/label&gt;
-&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot; /&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper text&quot;&gt;
+	&lt;label for&#x3D;&quot;textInput&quot; class&#x3D;&quot;requiredInput&quot;&gt;Required Text Input&lt;/label&gt;
+	&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot;&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
+		</div>
 
 </div>
 
 
 <div class="f-item-group" id="textarea">
 
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Textarea</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Textarea</h2>
 	</div>
+		<div class="f-item-group" id="textarea.default-2">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Default 2</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
 <div class="f-item-preview">
-	<textarea name="" id="" cols="30" rows="10"></textarea>
+	<div class="inputWrapper textarea">
+	<label for="textArea">Text Area</label>
+	<textarea name="textArea" id="textArea"></textarea>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;textarea name&#x3D;&quot;&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;10&quot;&gt;&lt;/textarea&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper textarea&quot;&gt;
+	&lt;label for&#x3D;&quot;textArea&quot;&gt;Text Area&lt;/label&gt;
+	&lt;textarea name&#x3D;&quot;textArea&quot; id&#x3D;&quot;textArea&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
+		</div>
+		<div class="f-item-group" id="textarea.required">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Required</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="inputWrapper textarea">
+	<label for="textArea" class="requiredInput">Text Area</label>
+	<textarea name="textArea" id="textArea"></textarea>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;inputWrapper textarea&quot;&gt;
+	&lt;label for&#x3D;&quot;textArea&quot; class&#x3D;&quot;requiredInput&quot;&gt;Text Area&lt;/label&gt;
+	&lt;textarea name&#x3D;&quot;textArea&quot; id&#x3D;&quot;textArea&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="typography">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Typography</h2>
+	</div>
+		<div class="f-item-group" id="typography.label">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Label</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Paragraph with a <code>.label</code> class applied. Intended for input labels and other microcopy.</p>
+
+</div>
+<div class="f-item-preview">
+	<p class="label">Label</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p class&#x3D;&quot;label&quot;&gt;Label&lt;/p&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="typography.lead-paragraph">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Lead Paragraph</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Paragraph with a <code>.lead</code> class applied. Intended for the initial paragraph of a page or article (the summarizing paragraph… the “bite”).</p>
+
+</div>
+<div class="f-item-preview">
+	<p class="lead">Our tone changes depending on the situation, but it’s generally informal. We have a <em>sense of humor</em>, but we value clarity over entertainment.</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p class&#x3D;&quot;lead&quot;&gt;Our tone changes depending on the situation, but it’s generally informal. We have a &lt;em&gt;sense of humor&lt;/em&gt;, but we value clarity over entertainment.&lt;/p&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="typography.paragraph">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Paragraph</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<p>My generation is special because of what we missed rather than what we got, because in a certain sense <strong>we are the first and the last.</strong> The first to take technology for granted. <em>(What was a space shot to us, except an hour cut from Social Studies to gather before a TV in the gym as Cape Canaveral counted down?)</em> The first to grow up with TV. My sister was 8 when we got our set, so to her it seemed magic and always somewhat foreign. She had known books already and would never really replace them. But for me, the TV set was, like the kitchen sink and the telephone, a fact of life.</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p&gt;My generation is special because of what we missed rather than what we got, because in a certain sense &lt;strong&gt;we are the first and the last.&lt;/strong&gt; The first to take technology for granted. &lt;em&gt;(What was a space shot to us, except an hour cut from Social Studies to gather before a TV in the gym as Cape Canaveral counted down?)&lt;/em&gt; The first to grow up with TV. My sister was 8 when we got our set, so to her it seemed magic and always somewhat foreign. She had known books already and would never really replace them. But for me, the TV set was, like the kitchen sink and the telephone, a fact of life.&lt;/p&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="typography.secondary-paragraph">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Secondary Paragraph</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Paragraph with a <code>.secondary</code> class applied. Intended for footnotes, asides, and other auxillary content.</p>
+
+</div>
+<div class="f-item-preview">
+	<p class="secondary">Our tone changes depending on the situation, but it’s generally informal. We have a sense of humor, but we value clarity over entertainment.</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p class&#x3D;&quot;secondary&quot;&gt;Our tone changes depending on the situation, but it’s generally informal. We have a sense of humor, but we value clarity over entertainment.&lt;/p&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
